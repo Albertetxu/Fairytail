@@ -1,0 +1,6 @@
+Flask==2.3.3
+requests==2.31.0
+debugpy # Required for debugging.
+langchain_google_vertexai[anthropic,all]
+google-cloud-aiplatform
+vertexai 

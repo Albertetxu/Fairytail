@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fairy Tale Generator</title>
+</head>
+<body>
+    <h1>Fairy Tale Generator</h1>
+    <form method="POST">
+        <label for="language">Language:</label>
+        <input type="text" id="language" name="language" required><br><br>
+
+        <label for="age_range">Age Range:</label>
+        <input type="text" id="child age" name="child age" required><br><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <input type="submit" value="Generate Fairy Tale">
+    </form>
+
+    <h2>Generated Fairy Tale:</h2>
+    <p>{{ fairy_tale }}</p> 
+</body>
+</html>
