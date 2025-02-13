@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-west3-docker.pkg.dev/albert-project-414914/fairytail/streamlit-gemini:v1.1', '.']
+images:
+- 'europe-west3-docker.pkg.dev/albert-project-414914/fairytail/streamlit-gemini:v1.1'
+options:
+  logging: CLOUD_LOGGING_ONLY
+substitutions:
+- DESCRIPTION: "Application using LLM gemini-1.5 to generate the text of a farytail with the user input"
